@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculo Consumo</title>
+</head>
+<body>
+    <!--
+        1.- Crea un nuevo archivo, llámalo calculo_consumo.html y guárdalo dentro de la carpeta que nombramos Lógica de Programación. 
+        No olvides la estructura mínima que tenemos que tener para cada uno de los nuevos programas.
+
+        2.- En el bloque HTML coloca un título con el siguiente contenido: <h3>¿Alcohol o gasolina?</h3>. Guarda el programa y ábrelo en el navegador.
+
+        3.- Problema: Si un carro tiene un tanque de 40 litros. 
+        Usando gasolina y consumiendo todo el tanque se hace un recorrido de 480 kilómetros. 
+        ¿Cuál es la eficiencia del carro usando gasolina? o sea, 
+        ¿cuántos kilómetros recorre el carro por cada litro de gasolina? 
+        Para calcular la eficiencia: divide la distancia recorrida entre la cantidad de litros gastados. 
+        Imprime el valor utilizando document.write. Organiza las cuentas en variables.
+
+        4.- Por otro lado, si el carro usa alcohol como combustible, el mismo tanque de 40 litros hace un recorrido de 300 kilómetros. 
+        ¿Cuál es el la eficiencia del carro usando alcohol?
+        -->
+
+    <h3>¿Alcohol o gasolina?</h3>
+
+  
+    <script>
+        
+        
+        tanque_carro=40; /*Si un carro tiene un tanque de 40 litros. */
+        recorrido_gasolina=480; /*todo el tanque se hace un recorrido de 480 kilómetros. */
+        recorrido_alcohol=300;  /*hace un recorrido de 300 kilómetros.*/
+
+        eficiencia_gasolina= recorrido_gasolina/tanque_carro; /*divide la distancia recorrida entre la cantidad de litros gastados.*/
+        eficiencia_alcohol= recorrido_alcohol/tanque_carro; /*divide la distancia recorrida entre la cantidad de litros gastados.*/
+
+        document.write("El carro tiene un tanque de: " + tanque_carro + " Litros de Gasolina <br>");
+        document.write("Consumiendo todo el tanque se hace un recorrido de: " + recorrido_gasolina + " KM. <br><br>");
+        document.write("La eficiencia del carro usando gasolina es de: " + eficiencia_gasolina + " km/L <br><br>");
+        document.write("La eficiencia del carro usando Alcohol es de: " + eficiencia_alcohol + " km/L <br>");
+
+        
+    </script>
+
+</body>
+</html>
